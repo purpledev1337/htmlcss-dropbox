@@ -11,9 +11,9 @@ a {
     color: inherit;
 }
 
-/* .col {
+.col {
     float: left;
-} */
+}
 
 .container-center {
     width: 80%;
@@ -101,4 +101,32 @@ a {
 #jumbo-img {
     width: 70%;
     float: left;
+}
+
+/* main */
+/* PLAN CHOICE SECTION */
+#paid-plan h2 {
+    font-size: 45px;
+    margin: 5% 0;
+}
+
+#paid-plan span {
+    margin-right: 10%;
+}
+
+.plan-cat {
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+.plan {
+    width: calc(100% / 3 - 80px);
+    border: solid 1px gray;
+    margin: 0 40px;
+
+}
+
+.plan-bot {
+    border: solid 1px gray;
+    margin-top: 3%;
 }
