@@ -11,6 +11,15 @@ a {
     color: inherit;
 }
 
+
+
+.btn {
+    background-color: blue;
+    padding: 10px 20px;
+    color: white;
+    display: inline-block;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -19,13 +28,13 @@ a {
 
 /* header */
 #main-menu {
-    height: 80px;
+    height: 70px;
     padding: 20px 40px;
-    position: sticky;
     font-size: 18px;
     font-weight: 600;
-    vertical-align: middle;
-    /* background-color: violet; */
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 #main-menu nav {
@@ -54,9 +63,34 @@ a {
     float: right;
 }
 
-.btn {
-    background-color: blue;
-    padding: 5px 20px;
-    color: white;
-    display: inline-block;
+/* jumbotron */
+.jumbotron {
+    background-color: rgb(157, 197, 230);
+    padding: 5% 10%;
+}
+
+.jumbotron h1 {
+    font-size: 85px;
+    margin-bottom: 4%;
+}
+
+.jumbotron .col.txt {
+    width: 25%;
+    float: left;
+    margin-right: 5%;
+    font-weight: 600;
+}
+
+.jumbotron a {
+    margin: 10% 0 5%;
+}
+
+#freccia {
+    margin-top: 15%;
+    font-size: 50px;
+}
+
+.jumbotron .col img {
+    width: 70%;
+    float: left;
 }
