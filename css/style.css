@@ -128,5 +128,13 @@ a {
 
 .plan-bot {
     border: solid 1px gray;
+    width: 100%;
     margin-top: 3%;
+    position: relative;
+}
+
+.plan-bot .btn {
+    position: absolute;
+    top: 30px;
+    right: 25px;
 }
