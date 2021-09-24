@@ -174,12 +174,21 @@ a {
 }
 
 #clients img {
-    width: 100%;
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
 }
 
 #clients .col-left, #clients .col-right {
     width: 30%;
 }
+#clients .col-right {
+    float: right;
+}
+
  /* col left */
 #clients .col-left .top-left {
     width: 50%;
@@ -223,7 +232,7 @@ a {
 
 /* col mid */
 #clients .col-mid {
-    width: 38%;
+    width: 40%;
 }
 
 /* col bot */
@@ -237,6 +246,11 @@ a {
 }
 
 #clients .col {
-    /* height: 300px; */
+    /* debug */
+    height: 300px;
     border: solid 1px black;
+}
+
+.relative {
+    position: relative;
 }
