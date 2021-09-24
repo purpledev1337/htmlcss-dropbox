@@ -288,3 +288,37 @@ a {
 .faq-quest:hover + p {
     display: block;
 }
+
+/* footer */
+footer {
+    background-color: black;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-top {
+    color: white;
+    padding: 5% 0;
+}
+
+.footer-col {
+    width: 20%;
+    float: left;
+}
+
+.footer-col li {
+    list-style: none;
+}
+
+.footer-bot {
+    color: gray;
+    padding: 2%;
+    width: 85%;
+}
+
+.footer-bot hr {
+    width: 5%;
+    color: green;
+}
