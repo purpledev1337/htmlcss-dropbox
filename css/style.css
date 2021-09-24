@@ -118,8 +118,13 @@ a {
     margin: 5% 0;
 }
 
-#paid-plan span {
+.plan-mode {
     margin-right: 10%;
+}
+
+.buy-now {
+    text-decoration: underline;
+    color: deepskyblue;
 }
 
 .plan-cat {
@@ -132,6 +137,26 @@ a {
     border: solid 1px gray;
     margin: 0 40px;
     min-height: 80vh;
+}
+
+.plan-span {
+    color: gray;
+}
+
+.plan-des li::before {
+    display: inline-block;
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+}
+
+.plan-des ul {
+    list-style: none;
+}
+
+.plan-des hr {
+    width: 15%;
+    margin: 10%;
 }
 
 .plan-bot {
@@ -328,5 +353,4 @@ footer a {
 
 .footer-bot hr {
     width: 5%;
-    color: green;
 }
