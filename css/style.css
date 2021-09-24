@@ -16,7 +16,7 @@ a {
 }
 
 .container-center {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -74,6 +74,7 @@ a {
 .jumbotron {
     background-color: rgb(157, 197, 230);
     padding: 5% 10%;
+    height: 90vh;
 }
 
 .jumbotron h1 {
@@ -104,7 +105,8 @@ a {
 }
 
 /* main */
-/* PLAN CHOICE SECTION */
+
+    /* PLAN CHOICE SECTION */
 #paid-plan h2 {
     font-size: 45px;
     margin: 5% 0;
@@ -128,13 +130,39 @@ a {
 
 .plan-bot {
     border: solid 1px gray;
-    width: 100%;
+    margin: 0 40px;
     margin-top: 3%;
-    position: relative;
+}
+
+.plan-bot h5 {
+    display: inline-block;
+    width: 70%;
 }
 
 .plan-bot .btn {
-    position: absolute;
-    top: 30px;
-    right: 25px;
+    float: right;
+    width: 20%;
+    margin: 2%;
+}
+
+/* find partner */
+#find-partner .partner {
+    padding: 5%;
+}
+
+#find-partner .col {
+    width: 50%;
+}
+
+#find-partner img {
+    width: 100%;
+}
+
+/* operations */
+#operations .col {
+    width: calc(100% / 3);
+}
+
+#operations img {
+    width: 100%;
 }
