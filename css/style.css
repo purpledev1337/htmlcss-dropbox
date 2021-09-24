@@ -74,6 +74,8 @@ a {
 .jumbotron {
     background-color: rgb(157, 197, 230);
     padding: 5% 10%;
+
+    /* image outside background */
     height: 90vh;
 }
 
@@ -125,7 +127,7 @@ a {
     width: calc(100% / 3 - 80px);
     border: solid 1px gray;
     margin: 0 40px;
-
+    min-height: 80vh;
 }
 
 .plan-bot {
@@ -174,8 +176,12 @@ a {
 }
 
 #clients img {
-    display: inline-block;
+    /* display: inline-block; */
     width: 150px;
+    height: 150px;
+}
+
+.client-img {
     position: absolute;
     top: 0;
     right: 0;
@@ -185,9 +191,9 @@ a {
 #clients .col-left, #clients .col-right {
     width: 30%;
 }
-#clients .col-right {
+/* #clients .col-right {
     float: right;
-}
+} */
 
  /* col left */
 #clients .col-left .top-left {
@@ -247,10 +253,38 @@ a {
 
 #clients .col {
     /* debug */
-    height: 300px;
+    height: 250px;
     border: solid 1px black;
 }
 
-.relative {
+#clients .col-mid {
+    /* debug */
+    height: 500px;
+    /* margin-bottom: 50px; */
+}
+
+.relative-pos {
     position: relative;
+}
+
+/* FAQ */
+.faq-quest {
+    padding: 20px 5px;
+}
+
+.accordion {
+    border-bottom: 1px black solid;
+}
+
+.faq-box .angle-down {
+    float: right;
+}
+
+.faq-box p {
+    display: none;
+    margin-bottom: 5px;
+}
+
+.faq-quest:hover + p {
+    display: block;
 }
