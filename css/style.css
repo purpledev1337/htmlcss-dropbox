@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
 .col {
@@ -165,4 +165,78 @@ a {
 
 #operations img {
     width: 100%;
+}
+
+/* clients */
+#clients a {
+    text-decoration: underline;
+    color: deepskyblue;
+}
+
+#clients img {
+    width: 100%;
+}
+
+#clients .col-left, #clients .col-right {
+    width: 30%;
+}
+ /* col left */
+#clients .col-left .top-left {
+    width: 50%;
+    background-color: lightgreen;
+}
+
+#clients .col-left .top-right {
+    width: 50%;
+    background-color: rgb(126, 20, 20)
+}
+
+#clients .col-left .bot-left {
+    width: 50%;
+    background-color: lightsteelblue;
+}
+
+#clients .col-left .bot-right {
+    width: 50%;
+    background-color: red;
+}
+/* col right */
+#clients .col-right .top-left {
+    width: 50%;
+    background-color: red;
+}
+
+#clients .col-right .top-right {
+    width: 50%;
+    background-color: rgb(45, 153, 72);
+}
+
+#clients .col-right .bot-left {
+    width: 50%;
+    background-color: blue;
+}
+
+#clients .col-right .bot-right {
+    width: 50%;
+    background-color: yellow;
+}
+
+/* col mid */
+#clients .col-mid {
+    width: 38%;
+}
+
+/* col bot */
+#clients .col-bot {
+    background-color: rgb(173, 228, 233);
+}
+
+#clients .col-bot .col {
+    width: 50%;
+    padding: 10% 15%;
+}
+
+#clients .col {
+    /* height: 300px; */
+    border: solid 1px black;
 }
