@@ -50,6 +50,10 @@ a {
     float: left;
 }
 
+#main-menu nav li:hover {
+    border-bottom: black 2px solid;
+}
+
 #nav-left {
     padding-right: 10%;
 }
@@ -310,6 +314,10 @@ footer a {
 
 .footer-col li {
     list-style: none;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
 }
 
 .footer-bot {
