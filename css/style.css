@@ -21,7 +21,7 @@ a {
 }
 
 .btn {
-    background-color: blue;
+    background-color: #0061ff;
     padding: 10px 20px;
     color: white;
     display: inline-block;
@@ -35,14 +35,18 @@ a {
 
 /* header */
 #main-menu {
+    width: 100%;
     height: 70px;
     padding: 20px 40px;
     font-size: 18px;
     font-weight: 600;
-    position: sticky;
+    position: fixed;
+    z-index: 500;
     top: 0;
     background-color: white;
 }
+
+
 
 #main-menu nav {
     width: calc(100% / 2 - 110px);
@@ -77,10 +81,13 @@ a {
 /* jumbotron */
 .jumbotron {
     background-color: rgb(157, 197, 230);
-    padding: 5% 10%;
+    padding: 0 10%;
+    margin-top: 70px;
+}
 
-    /* image outside background */
-    height: 90vh;
+.jumbotron .clearfix {
+    position: relative;
+    bottom: -80px;
 }
 
 .jumbotron h1 {
@@ -90,9 +97,13 @@ a {
 
 .jumbo-text {
     width: 25%;
-    margin-right: 5%;
+    margin-right: 10%;
     font-weight: 600;
     float: left;
+}
+
+.jumbo-text span {
+    display: block;
 }
 
 .jumbotron a {
@@ -100,54 +111,119 @@ a {
 }
 
 .jumbotron i {
-    display: block;
+    display: inline-block;
     margin-top: 15%;
     font-size: 50px;
 }
 
 #jumbo-img {
-    width: 70%;
+    width: 65%;
     float: left;
 }
 
 /* main */
 
     /* PLAN CHOICE SECTION */
-#paid-plan h2 {
-    font-size: 45px;
-    margin: 5% 0;
+#paid-plan .plan-mode h2, #paid-plan .plan-des h2 {
+        font-size: 30px;
+        margin-top: 10%;
+        margin-bottom: 6%;
+}
+    
+#paid-plan .plan-mode h2 {
+        margin-top: 20%;
+        margin-bottom: 5%;
+        font-size: 50px;
 }
 
 .plan-mode {
     margin-right: 10%;
 }
 
+.plan-mode i:first-of-type {
+    color: #0061ff;
+}
+
+.plan-mode i:last-of-type {
+    color: lightgray;
+}
+
 .buy-now {
     text-decoration: underline;
-    color: deepskyblue;
+    color: #0061ff;
 }
 
 .plan-cat {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
     text-align: center;
+    padding: 12px 0;
 }
 
 .plan {
-    width: calc(100% / 3 - 80px);
-    border: solid 1px gray;
-    margin: 0 40px;
-    min-height: 80vh;
+    width: 30%;
+    border: solid 1px lightgray;
+    min-height: 120vh;
+}
+
+.plan h4 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.plan .btn {
+    margin: 10% 0;
+    display: block;
+    padding: 2% 20%;
+}
+
+#plan-box {
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+
+.mid-col {
+    margin: 0 5%;
+}
+
+.plan-des {
+    padding: 0 10%;
 }
 
 .plan-span {
     color: gray;
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-weight: 600;
 }
 
-.plan-des li::before {
-    display: inline-block;
+.plan-des li {
+    margin: 8% 0;
+}
+
+.plan-des .plan-des-top li:nth-child(1)::before {
     content: "\f007";
     font-family: "Font Awesome 5 Free";
     font-size: 20px;
+}
+
+.plan-des .plan-des-top li:nth-child(2):before {
+    content: "\f07b";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+}
+
+.plan-des .plan-des-top li:nth-child(3):before {
+    content: "\270E";
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.plan-des .plan-des-bot li::before {
+    content: "\2714";
+    color: cornflowerblue;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .plan-des ul {
@@ -156,24 +232,31 @@ a {
 
 .plan-des hr {
     width: 15%;
-    margin: 10%;
+    margin: 10% 0;
 }
 
 .plan-bot {
-    border: solid 1px gray;
-    margin: 0 40px;
-    margin-top: 3%;
+    border: solid 1px lightgray;
+    width: 100%;
+    margin-top: 4%;
 }
 
-.plan-bot h5 {
-    display: inline-block;
-    width: 70%;
+.plan-bot .bot-des {
+    width: 65%;
+    float: left;
+    margin: 2%;
+}
+
+.bot-des h3 {
+    margin: 3% 0;
 }
 
 .plan-bot .btn {
     float: right;
-    width: 20%;
-    margin: 2%;
+    width: 25%;
+    margin: 2% 5% 0 0;
+    padding: 10px 5%;
+    text-align: center;
 }
 
 /* find partner */
@@ -185,46 +268,97 @@ a {
     width: 50%;
 }
 
+
 #find-partner img {
     width: 100%;
+    margin-bottom: 10%;
+}
+
+#find-partner h3 {
+    font-size: 30px;
+}
+
+#find-partner p {
+    font-weight: 600;
+    margin: 5% 0;
+    line-height: 2em;
+}
+
+#find-partner .btn {
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+    font-weight: 600;
 }
 
 /* operations */
+#operations {
+    margin-bottom: 15%;
+}
+
+#operations h2 {
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+#operations h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#operations p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10% 0;
+    width: 85%;
+}
+
 #operations .col {
-    width: calc(100% / 3);
+    width: 30%;
 }
 
 #operations img {
     width: 100%;
 }
 
+.img-center {
+    text-align: center;
+}
+
 /* clients */
 #clients a {
     text-decoration: underline;
-    color: deepskyblue;
+    color: #0061ff;
+    margin: 3% 0;
+    font-weight: 600;
+    display: inline-block;
 }
 
-#clients img {
-    /* display: inline-block; */
-    width: 150px;
-    height: 150px;
+#clients h2 {
+    font-size: 45px;
+    font-weight: 700;
+    width: 50%;
 }
 
-.client-img {
+#clients .client-img img {
+    width: 50%;
+    filter: invert(1);
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
 #clients .col-left, #clients .col-right {
     width: 30%;
+    float: left;
 }
-/* #clients .col-right {
-    float: right;
-} */
 
- /* col left */
+#clients .col {
+    min-height: 300px;
+}
+
+/* col left */
 #clients .col-left .top-left {
     width: 50%;
     background-color: lightgreen;
@@ -237,59 +371,86 @@ a {
 
 #clients .col-left .bot-left {
     width: 50%;
-    background-color: lightsteelblue;
+    background-color: royalblue;
 }
 
 #clients .col-left .bot-right {
     width: 50%;
-    background-color: red;
+    background-color: tomato;
 }
 /* col right */
 #clients .col-right .top-left {
     width: 50%;
-    background-color: red;
+    background-color: rgb(195, 0, 0);
 }
 
 #clients .col-right .top-right {
     width: 50%;
-    background-color: rgb(45, 153, 72);
+    background-color: rgba(180,208,231,255);
 }
 
 #clients .col-right .bot-left {
     width: 50%;
-    background-color: blue;
+    background-color: rgb(0, 0, 150);
 }
 
 #clients .col-right .bot-right {
     width: 50%;
-    background-color: yellow;
+    background-color: rgb(185, 185, 0);
 }
 
 /* col mid */
 #clients .col-mid {
     width: 40%;
+    min-height: 600px;
+    padding: 5% 3%;
+    float: left;
+    background-color: lightgray;
+}
+
+#client-mid-img img {
+    filter: invert(0);
+    width: 25%;
+}
+
+#clients .col-mid span {
+    display: inline-block;
+    margin-top: 10%;
+}
+
+#clients .col-mid hr {
+    width: 10%;
+    margin: 5% 0;
 }
 
 /* col bot */
 #clients .col-bot {
-    background-color: rgb(173, 228, 233);
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(180,208,231,255);
+    text-align: center;
+}
+
+#clients .col-bot h2 {
+    font-size: 45px;
+    color: purple;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#clients .col-bot .btn {
+    color: black;
+    background-color: white;
+    width: 100%;
+}
+
+#clients .col-bot a {
+    width: 40%;
 }
 
 #clients .col-bot .col {
     width: 50%;
-    padding: 10% 15%;
-}
-
-#clients .col {
-    /* debug */
-    height: 250px;
-    border: solid 1px black;
-}
-
-#clients .col-mid {
-    /* debug */
-    height: 500px;
-    /* margin-bottom: 50px; */
+    padding: 8% 0;
 }
 
 .relative-pos {
@@ -297,21 +458,40 @@ a {
 }
 
 /* FAQ */
+.faq-box {
+    margin: 5% 0;
+}
+
 .faq-quest {
-    padding: 20px 5px;
+    padding: 40px 5px;
 }
 
 .accordion {
-    border-bottom: 1px black solid;
+    border-bottom: 1px lightgray solid;
+    cursor: pointer;
+}
+
+.faq-quest:first-child {
+    border-top: 1px lightgray solid;
 }
 
 .faq-box .angle-down {
+    font-size: 25px;
     float: right;
+    padding-right: 2%;
+}
+
+.faq-box h2 {
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 2%;
 }
 
 .faq-box p {
     display: none;
     margin-bottom: 5px;
+    padding-right: 8%;
+    padding-bottom: 2%;
 }
 
 .faq-quest:hover + p {
@@ -323,22 +503,39 @@ footer {
     background-color: black;
 }
 
+.container-footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
 footer a {
     color: white;
 }
 
+footer hr {
+    color: lightgray;
+    width: 10%;
+}
+
 .footer-top {
     color: white;
-    padding: 5% 0;
 }
 
 .footer-col {
     width: 20%;
     float: left;
+    margin: 5% 0;
+}
+
+.footer-col h3 {
+    margin-bottom: 25px;
+    font-size: 24px;
 }
 
 .footer-col li {
     list-style: none;
+    margin: 10px 0;
+    font-weight: 600;
 }
 
 .footer-col a:hover {
@@ -347,10 +544,5 @@ footer a {
 
 .footer-bot {
     color: gray;
-    padding: 2%;
-    width: 85%;
-}
-
-.footer-bot hr {
-    width: 5%;
+    padding: 3% 0;
 }
