@@ -87,7 +87,6 @@ header li {
 
 header li div {
     padding: 0 30px;
-    
 }
 
 #btn-inizia {
@@ -96,6 +95,33 @@ header li div {
     background-color: #0061ff;
     color: white;
     margin: 0 30px;
+}
+
+/* nav dropdown try */
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    transform: translate(-20% , 0);
+    background-color: white;
+    width: 160%;
+}
+  
+.dropdown-menu a {
+    display: block;
+}
+  
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border: 1px black solid;
+}
+
+header .dropdown div {
+    text-align: center;
+    padding: 0;
 }
 
 /* jumbotron */
@@ -309,6 +335,7 @@ header li div {
     background-color: white;
     border: 1px black solid;
     font-weight: 600;
+    font-size: 18px;
 }
 
 /* operations */
@@ -356,7 +383,7 @@ header li div {
 }
 
 #clients h2 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 700;
     width: 50%;
 }
