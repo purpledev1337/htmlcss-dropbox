@@ -27,6 +27,10 @@ a {
     display: inline-block;
 }
 
+.btn:hover {
+    background-color: #0062ffa1;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -97,11 +101,22 @@ header li div {
     margin: 0 30px;
 }
 
+#btn-inizia:hover {
+    background-color: #0062ffa1;
+}
+
 /* nav dropdown try */
 .dropdown {
     position: relative;
+    cursor: pointer;
 }
-  
+
+.dropdown span {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -112,6 +127,11 @@ header li div {
   
 .dropdown-menu a {
     display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #000000;
+    color: white;
 }
   
 .dropdown:hover .dropdown-menu {
@@ -338,6 +358,11 @@ header .dropdown div {
     font-size: 18px;
 }
 
+#find-partner .btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
 /* operations */
 #operations {
     margin-bottom: 15%;
@@ -488,7 +513,7 @@ header .dropdown div {
 
 #clients .col-bot h2 {
     font-size: 45px;
-    color: purple;
+    color: darkmagenta;
     width: 60%;
     margin: 0 auto;
 }
@@ -498,6 +523,11 @@ header .dropdown div {
     background-color: white;
     width: 100%;
     vertical-align: middle;
+}
+
+#clients .btn:hover {
+    background-color: #000000;
+    color: white;
 }
 
 #clients .col-bot a {
