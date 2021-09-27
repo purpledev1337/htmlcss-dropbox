@@ -36,11 +36,12 @@ a {
 /* header */
 header nav {
     width: 100%;
-    height: 70px;
+    height: 80px;
     position: fixed;
     z-index: 500;
     top: 0;
     background-color: white;
+    min-width: 1450px;
 }
 
 header nav a {
@@ -49,13 +50,21 @@ header nav a {
     text-decoration: none;
 }
 
-header li {
-    line-height: 70px;
+header nav li {
+    line-height: 80px;
     display: inline-block;
 }
 
-header li:hover {
+header nav li:hover {
     border-bottom: black 2px solid;
+}
+
+#nav-left li:first-child:hover{
+    border-bottom: 0;
+}
+
+#nav-right li:last-child:hover {
+    border-bottom: 0;
 }
 
 #nav-left {
@@ -63,7 +72,9 @@ header li:hover {
 }
 #nav-left img {
     height: 25px;
-    line-height: 70px;
+    line-height: 80px;
+    vertical-align: middle;
+    margin: 0 30px;
 }
 
 #nav-right {
@@ -71,15 +82,20 @@ header li:hover {
 }
 
 header li {
-    margin: 0 30px;
     display: inline-block;
+}
+
+header li div {
+    padding: 0 30px;
+    
 }
 
 #btn-inizia {
     text-align: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: #0061ff;
     color: white;
+    margin: 0 30px;
 }
 
 /* jumbotron */
