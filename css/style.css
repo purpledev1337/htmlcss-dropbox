@@ -22,9 +22,10 @@ a {
 
 .btn {
     background-color: #0061ff;
-    padding: 10px 20px;
+    padding: 3% 6%;
     color: white;
     display: inline-block;
+    text-align: center;
 }
 
 .btn:hover {
@@ -239,7 +240,6 @@ header .dropdown div {
 .plan .btn {
     margin: 10% 0;
     display: block;
-    padding: 2% 20%;
 }
 
 #plan-box {
