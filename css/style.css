@@ -382,7 +382,6 @@ header .dropdown div {
     font-size: 18px;
     font-weight: 600;
     margin: 10% 0;
-    width: 85%;
 }
 
 #operations .col {
@@ -428,7 +427,8 @@ header .dropdown div {
 }
 
 #clients .col {
-    /* min-height: 300px; */
+    position: relative;
+    /* aspect ratio 1:1  */
     padding-top: 50%;
 }
 
@@ -482,10 +482,7 @@ header .dropdown div {
     width: 40%;
     padding: 5% 3%;
     float: left;
-}
-
-#clients-mid-txt {
-    overflow: overlay;
+    max-height: 15vh;
 }
 
 #client-mid-img img {
@@ -537,10 +534,6 @@ header .dropdown div {
 #clients .col-bot .col {
     width: 50%;
     padding: 8% 0;
-}
-
-.relative-pos {
-    position: relative;
 }
 
 /* FAQ */
