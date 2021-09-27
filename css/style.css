@@ -346,6 +346,7 @@ header li div {
 }
 
 /* clients */
+
 #clients a {
     text-decoration: underline;
     color: #0061ff;
@@ -375,8 +376,10 @@ header li div {
 }
 
 #clients .col {
-    min-height: 300px;
+    /* min-height: 300px; */
+    padding-top: 50%;
 }
+
 
 /* col left */
 #clients .col-left .top-left {
@@ -419,13 +422,18 @@ header li div {
     background-color: rgb(185, 185, 0);
 }
 
+#clients .clearfix {
+    background-color: lightgray;
+}
 /* col mid */
 #clients .col-mid {
     width: 40%;
-    min-height: 600px;
     padding: 5% 3%;
     float: left;
-    background-color: lightgray;
+}
+
+#clients-mid-txt {
+    overflow: overlay;
 }
 
 #client-mid-img img {
@@ -462,6 +470,7 @@ header li div {
     color: black;
     background-color: white;
     width: 100%;
+    vertical-align: middle;
 }
 
 #clients .col-bot a {
