@@ -227,6 +227,7 @@ header nav li:hover {
     width: 30%;
     border: solid 1px lightgray;
     min-height: 120vh;
+    float: left;
 }
 
 .plan h4 {
@@ -314,6 +315,7 @@ header nav li:hover {
     border: solid 1px lightgray;
     width: 100%;
     margin-top: 4%;
+    float: left;
 }
 
 .plan-bot .bot-des {
@@ -335,16 +337,18 @@ header nav li:hover {
 }
 
 /* find partner */
-#find-partner .partner {
+#find-partner .partner-txt {
     padding: 5%;
-}
-
-#find-partner .col {
     width: 50%;
+    float: left;
 }
 
+#find-partner .partner-img {
+    width: 50%;
+    float: left;
+}
 
-#find-partner img {
+#find-partner .partner-img img {
     width: 100%;
     margin-bottom: 10%;
 }
@@ -393,8 +397,14 @@ header nav li:hover {
     margin: 10% 0;
 }
 
-#operations .col {
+#operations .ops-col {
     width: 30%;
+    float: left;
+}
+
+#operations .ops-mid-col {
+    float: left;
+    margin: 0 5%;
 }
 
 #operations img {
