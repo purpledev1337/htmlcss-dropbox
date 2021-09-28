@@ -11,15 +11,19 @@ a {
     color: initial;
 }
 
-.col {
-    float: left;
-}
-
 .container-center {
     width: 75%;
     margin: 0 auto;
 }
 
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* buttons */
 .btn {
     background-color: #0061ff;
     padding: 3% 6%;
@@ -32,10 +36,58 @@ a {
     background-color: #0062ffa1;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+#btn-inizia {
+    text-align: center;
+    padding: 5px 20px;
+    background-color: #0061ff;
+    color: white;
+    margin: 0 30px;
+}
+
+#btn-inizia:hover {
+    background-color: #0062ffa1;
+}
+
+#jumbotron .btn {
+    margin: 10% 0 5%;
+}
+
+#plan-box .plan .btn {
+    margin: 10% 0;
+    display: block;
+}
+
+#plan-box .plan-bot .btn {
+    float: right;
+    width: 25%;
+    margin: 2% 5% 0 0;
+    padding: 10px 5%;
+    text-align: center;
+}
+
+#find-partner .btn {
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#find-partner .btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+#clients .col-bot .btn {
+    color: black;
+    background-color: white;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#clients .btn:hover {
+    background-color: #000000;
+    color: white;
 }
 
 /* header */
@@ -91,19 +143,7 @@ header nav li:hover {
     margin: 0 30px;
 }
 
-#btn-inizia {
-    text-align: center;
-    padding: 5px 20px;
-    background-color: #0061ff;
-    color: white;
-    margin: 0 30px;
-}
-
-#btn-inizia:hover {
-    background-color: #0062ffa1;
-}
-
-/* nav dropdown */
+    /* nav dropdown */
 .dropdown {
     position: relative;
     cursor: pointer;
@@ -170,10 +210,6 @@ header nav li:hover {
     display: block;
 }
 
-#jumbotron .btn {
-    margin: 10% 0 5%;
-}
-
 #jumbotron i {
     display: inline-block;
     margin-top: 15%;
@@ -185,9 +221,7 @@ header nav li:hover {
     float: left;
 }
 
-/* main */
-
-/* PLAN CHOICE SECTION */
+/* PLAN SECTION */
 #paid-plan .plan-mode h2, #paid-plan .plan-des h2 {
         font-size: 30px;
         margin-top: 10%;
@@ -235,11 +269,6 @@ header nav li:hover {
     font-weight: 900;
 }
 
-.plan .btn {
-    margin: 10% 0;
-    display: block;
-}
-
 #plan-box {
     margin-top: 4%;
     margin-bottom: 10%;
@@ -283,14 +312,7 @@ header nav li:hover {
     font-weight: 900;
 } */
 
-.plan-des .plan-des-bot li::before {
-    content: "\2714";
-    color: #0061ff;
-    font-size: 20px;
-    font-weight: 900;
-}
-
-/* alternative to the pseudo element */
+    /* alternative to the pseudo element up here*/
 .plan-des .plan-des-top li:nth-child(3) {
     margin-top: -30px;
     padding: 30px 0 10px 20px;
@@ -300,7 +322,13 @@ header nav li:hover {
     background-position: left center;
     background-size: 15px;
 }
-/*  */
+
+.plan-des .plan-des-bot li::before {
+    content: "\2714";
+    color: #0061ff;
+    font-size: 20px;
+    font-weight: 900;
+}
 
 .plan-des ul {
     list-style: none;
@@ -328,14 +356,6 @@ header nav li:hover {
     margin: 3% 0;
 }
 
-.plan-bot .btn {
-    float: right;
-    width: 25%;
-    margin: 2% 5% 0 0;
-    padding: 10px 5%;
-    text-align: center;
-}
-
 /* find partner */
 #find-partner .partner-txt {
     padding: 5%;
@@ -361,19 +381,6 @@ header nav li:hover {
     font-weight: 600;
     margin: 5% 0;
     line-height: 2em;
-}
-
-#find-partner .btn {
-    color: black;
-    background-color: white;
-    border: 1px black solid;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-#find-partner .btn:hover {
-    background-color: #000000;
-    color: white;
 }
 
 /* operations */
@@ -525,18 +532,6 @@ header nav li:hover {
     color: darkmagenta;
     width: 60%;
     margin: 0 auto;
-}
-
-#clients .col-bot .btn {
-    color: black;
-    background-color: white;
-    width: 100%;
-    vertical-align: middle;
-}
-
-#clients .btn:hover {
-    background-color: #000000;
-    color: white;
 }
 
 #clients .col-bot a {
