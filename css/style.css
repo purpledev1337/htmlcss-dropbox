@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: initial;
 }
 
 .col {
@@ -41,7 +41,7 @@ a {
 /* header */
 header nav {
     width: 100%;
-    height: 80px;
+    height: 82px;
     position: fixed;
     z-index: 500;
     top: 0;
@@ -60,6 +60,10 @@ header nav li {
     display: inline-block;
 }
 
+header nav li div {
+    padding: 0 30px;
+}
+
 header nav li:hover {
     border-bottom: black 2px solid;
 }
@@ -75,23 +79,16 @@ header nav li:hover {
 #nav-left {
     float: left;
 }
-#nav-left img {
-    height: 25px;
-    line-height: 80px;
-    vertical-align: middle;
-    margin: 0 30px;
-}
 
 #nav-right {
     float: right;
 }
 
-header li {
-    display: inline-block;
-}
-
-header li div {
-    padding: 0 30px;
+#logo {
+    height: 25px;
+    line-height: 80px;
+    vertical-align: middle;
+    margin: 0 30px;
 }
 
 #btn-inizia {
@@ -106,7 +103,7 @@ header li div {
     background-color: #0062ffa1;
 }
 
-/* nav dropdown try */
+/* nav dropdown */
 .dropdown {
     position: relative;
     cursor: pointer;
@@ -140,24 +137,24 @@ header li div {
     border: 1px black solid;
 }
 
-header .dropdown div {
+.dropdown div {
     text-align: center;
     padding: 0;
 }
 
 /* jumbotron */
-.jumbotron {
+#jumbotron {
     background-color: rgb(157, 197, 230);
     padding: 0 10%;
     margin-top: 70px;
 }
 
-.jumbotron .clearfix {
+#jumbotron .clearfix {
     position: relative;
     bottom: -80px;
 }
 
-.jumbotron h1 {
+#jumbotron h1 {
     font-size: 85px;
     margin-bottom: 4%;
 }
@@ -173,11 +170,11 @@ header .dropdown div {
     display: block;
 }
 
-.jumbotron a {
+#jumbotron .btn {
     margin: 10% 0 5%;
 }
 
-.jumbotron i {
+#jumbotron i {
     display: inline-block;
     margin-top: 15%;
     font-size: 50px;
@@ -190,7 +187,7 @@ header .dropdown div {
 
 /* main */
 
-    /* PLAN CHOICE SECTION */
+/* PLAN CHOICE SECTION */
 #paid-plan .plan-mode h2, #paid-plan .plan-des h2 {
         font-size: 30px;
         margin-top: 10%;
@@ -203,8 +200,8 @@ header .dropdown div {
         font-size: 50px;
 }
 
-.plan-mode {
-    margin-right: 10%;
+.plan-mode span {
+    margin-right: 5%;
 }
 
 .plan-mode i:first-of-type {
@@ -215,7 +212,7 @@ header .dropdown div {
     color: lightgray;
 }
 
-.buy-now {
+.des-buy-now {
     text-decoration: underline;
     color: #0061ff;
 }
@@ -279,18 +276,30 @@ header .dropdown div {
     font-size: 20px;
 }
 
-.plan-des .plan-des-top li:nth-child(3):before {
+/* .plan-des .plan-des-top li:nth-child(3):before {
     content: "\270E";
+    font-size: 20px;
+    font-weight: 900;
+} */
+
+.plan-des .plan-des-bot li::before {
+    content: "\2714";
+    color: #0061ff;
     font-size: 20px;
     font-weight: 900;
 }
 
-.plan-des .plan-des-bot li::before {
-    content: "\2714";
-    color: cornflowerblue;
-    font-size: 20px;
-    font-weight: 900;
+/* alternative to the pseudo element */
+.plan-des .plan-des-top li:nth-child(3) {
+    margin-top: -30px;
+    padding: 30px 0 10px 20px;
+    list-style: none;
+    background-image: url("../img/pencil-alt-solid.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px;
 }
+/*  */
 
 .plan-des ul {
     list-style: none;
