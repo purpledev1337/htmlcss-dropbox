@@ -245,7 +245,7 @@ header nav li:hover {
     margin-bottom: 10%;
 }
 
-.mid-col {
+.plan-mid-col {
     margin: 0 5%;
 }
 
@@ -445,51 +445,44 @@ header nav li:hover {
     float: left;
 }
 
-#clients .col {
+/* Square box centralization */
+.square-col {
+    width: 50%;
+    float: left;
     position: relative;
     /* aspect ratio 1:1  */
     padding-top: 50%;
 }
-
-
 /* col left */
 #clients .col-left .top-left {
-    width: 50%;
     background-color: lightgreen;
 }
 
 #clients .col-left .top-right {
-    width: 50%;
     background-color: rgb(126, 20, 20)
 }
 
 #clients .col-left .bot-left {
-    width: 50%;
     background-color: royalblue;
 }
 
 #clients .col-left .bot-right {
-    width: 50%;
     background-color: tomato;
 }
 /* col right */
 #clients .col-right .top-left {
-    width: 50%;
     background-color: rgb(195, 0, 0);
 }
 
 #clients .col-right .top-right {
-    width: 50%;
     background-color: rgba(180,208,231,255);
 }
 
 #clients .col-right .bot-left {
-    width: 50%;
     background-color: rgb(0, 0, 150);
 }
 
 #clients .col-right .bot-right {
-    width: 50%;
     background-color: rgb(185, 185, 0);
 }
 
@@ -497,7 +490,7 @@ header nav li:hover {
     background-color: lightgray;
 }
 /* col mid */
-#clients .col-mid {
+#clients .client-mid-col {
     width: 40%;
     padding: 5% 3%;
     float: left;
@@ -509,12 +502,12 @@ header nav li:hover {
     width: 25%;
 }
 
-#clients .col-mid span {
+#clients .client-mid-col span {
     display: inline-block;
     margin-top: 10%;
 }
 
-#clients .col-mid hr {
+#clients .client-mid-col hr {
     width: 10%;
     margin: 5% 0;
 }
