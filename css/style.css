@@ -260,7 +260,7 @@ header nav li:hover {
 .plan {
     width: 30%;
     border: solid 1px lightgray;
-    min-height: 120vh;
+    min-height: 95vh;
     float: left;
 }
 
